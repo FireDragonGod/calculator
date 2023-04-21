@@ -1,4 +1,4 @@
-/** @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Orbitron&family=Roboto&display=swap');
 
 
 * {
@@ -8,18 +8,24 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
     background-color: #000022;
     color: white;
     word-break: break-all;
 }
 
 h1 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    font-size: xxx-large;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #calculator {
@@ -31,14 +37,14 @@ h1 {
 }
 
 #screen {
-    min-height: 60px;
+    min-height: 80px;
 }
 
 #input {
     font-size: xxx-large;
-    text-align: end;
     max-width: 320px;
     color: lightskyblue;
+    text-align: end;
 }
 
 div#buttonsWrapper {
@@ -54,6 +60,7 @@ button {
     color: white;
     background-color: #77889940;
     border: 0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .operation {
