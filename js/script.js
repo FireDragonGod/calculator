@@ -122,3 +122,5 @@ clear.addEventListener('click', () => {
   input.textContent = operate(operator, number, anotherNumber);
   decimal.removeAttribute('disabled', '');
 });
+
+decimal.addEventListener('click', e => e.target.setAttribute('disabled', ''));
