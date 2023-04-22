@@ -17,3 +17,5 @@
 - Futuristic design charrot
 - Backspace button
 - Keyboard support
+
+[Live Demo](https://firedragongod.github.io/calculator/)
