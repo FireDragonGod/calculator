@@ -124,3 +124,34 @@ clear.addEventListener('click', () => {
 });
 
 decimal.addEventListener('click', e => e.target.setAttribute('disabled', ''));
+
+backspace.addEventListener('click', () => {
+  if (operator.slice(-1) === '') {
+    input.textContent = input.textContent.slice(0, -1);
+    number = number.slice(0, -1);
+    let string = '';
+    for (let i = 0; i < input.textContent.length; i++) {
+      string += input.textContent[i];
+    }
+    let array = string.split('');
+    for (let j = 0; j < array.length; j++) {
+      if (array[j] === '.') {
+        decimal.removeAttribute('disabled', '');
+      }
+    }
+  }
+  if (operator.slice(-1) === '+' || operator.slice(-1) === '-' || operator.slice(-1) === 'x' || operator.slice(-1) === '➗') {
+    input.textContent = input.textContent.slice(0, -1);
+    anotherNumber = anotherNumber.slice(0, -1);
+    let string = '';
+    for (let i = 0; i < input.textContent.length; i++) {
+      string += input.textContent[i];
+    }
+    let array = string.split('');
+    for (let j = 0; j < array.length; j++) {
+      if (array[j] === '.') {
+        decimal.removeAttribute('disabled', '');
+      }
+    }
+  }
+});
