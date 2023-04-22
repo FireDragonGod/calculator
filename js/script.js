@@ -113,3 +113,12 @@ const populateDisplay = (operationButtons, numberButtons, equalButton) => {
 };
 
 populateDisplay(operationClass, numberClass, equal);
+
+clear.addEventListener('click', () => {
+  number = '';
+  anotherNumber = '';
+  operator = '';
+  input.textContent = '';
+  input.textContent = operate(operator, number, anotherNumber);
+  decimal.removeAttribute('disabled', '');
+});
