@@ -155,3 +155,10 @@ backspace.addEventListener('click', () => {
     }
   }
 });
+
+window.addEventListener('keydown', e => {
+  const button = document.querySelector(`button[data-type='${e.key}']`);
+  if (button === null) return;
+  button.currentTime = 0;
+  button.click();
+});
